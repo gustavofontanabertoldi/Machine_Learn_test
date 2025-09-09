@@ -79,3 +79,29 @@ A métrica **AUC-ROC** mede a área sob essa curva:
 - Quanto mais próximo de **1**, melhor a performance do classificador.  
 
 ---
+
+## 📏 Métricas de Erro
+
+Usadas principalmente em **regressão** para avaliar a diferença entre valores previstos e valores reais.
+
+- **ME (Mean Error):**  
+  Média simples dos erros. Pode ser positiva ou negativa (depende da escala e direção do erro).  
+  `Fórmula: ME = (Σ (yᵢ - ŷᵢ)) / n`
+
+- **MAE (Mean Absolute Error):**  
+  Média do valor absoluto dos erros. Mede o erro médio sem considerar sinal. (Depende de escala)
+  `Fórmula: MAE = (Σ |yᵢ - ŷᵢ|) / n`
+
+- **MSE (Mean Squared Error):**  
+  Média dos erros elevados ao quadrado. Penaliza mais erros grandes.  
+  `Fórmula: MSE = (Σ (yᵢ - ŷᵢ)²) / n`
+
+- **RMSE (Root Mean Squared Error):**  
+  Raiz quadrada do MSE. Interpretação mais intuitiva porque retorna à mesma unidade dos dados originais. (não afetado por escala)
+  `Fórmula: RMSE = √((Σ (yᵢ - ŷᵢ)²) / n)`
+
+- **R² (Coeficiente de Determinação):**  
+  Mede o quanto o modelo explica da variabilidade dos dados (0 a 1).  
+  `Fórmula: R² = 1 - (Σ (yᵢ - ŷᵢ)² / Σ (yᵢ - ȳ)²)`
+
+---
