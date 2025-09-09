@@ -60,7 +60,7 @@ Essas tabelas possuem três elementos principais:
 | **Classe prevista positiva** | Verdadeiros Positivos (VP) | Falsos Positivos (FP) |
 | **Classe prevista negativa** | Falsos Negativos (FN) | Verdadeiros Negativos (VN) |
 
-### Métricas principais:
+### Métricas principais
 
 - **Acurácia:** `(VP + VN) / (VP + VN + FP + FN)`  
 - **Precisão:** `VP / (VP + FP)`  
